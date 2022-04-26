@@ -80,6 +80,11 @@
             border: 1px solid #ccc;
             border-top: none;
         }
+        
+        form>* {
+            margin: 2px;
+            font-size: larger;
+        }
     </style>
     <style id="cssTable"></style>
 </head>
@@ -87,7 +92,7 @@
 <body>
     <form id="pageLogin" style="display: block" onsubmit="loginIn();return false;">
         <label for="pwd">密码:</label>
-        <input type="password" id="pwd" name="pwd">
+        <input type="password" style="max-width:150px" id="pwd" name="pwd">
         <input type="submit" value="确定">
     </form>
     <div id="pageMain" style="display: none">
@@ -275,5 +280,4 @@
         tryLoginIn();
     </script>
 </body>
-
 </html>

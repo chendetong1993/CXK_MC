@@ -182,7 +182,7 @@
                         elem_td.innerHTML = v2["val"] ? v2["val"] : "";
                         if (v2["edit"]) {
                             elem_td.setAttribute("contenteditable", "true");
-                            elem_td.setAttribute("onkeyup", 'setTimeout(function(){calcTable("' + key + '");}, 10)');
+                            elem_td.setAttribute("onkeyup", 'calcTable("' + key + '")');
                         }
                         elem_tr.appendChild(elem_td);
                     }
